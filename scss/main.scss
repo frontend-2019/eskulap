@@ -1,5 +1,8 @@
-$fontSizeBase: 12px;
-$fontBase: Arial;
+$fontSizeBase: 16px;
+$fontBase: 'Lato', sans-serif;
+$fontSecondary: 'Montserrat', sans-serif;
+$colorBase: #469dff;
+$colorBackgroundLi: #f4f4f4;
 
 body {
     background: #ffffff;
@@ -45,4 +48,68 @@ a {
 h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+.section {
+    padding: 90px 0;
+}
+
+.mainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.section-4 {
+    background-color: #fff;
+
+}
+
+.section-4__title {
+    margin: -30px 0 80px 0;
+    
+}
+
+.title__latest {
+    color: #3695ff;
+    font-size: 50px;
+    font-family: $fontBase;
+    font-weight: 300;
+}
+
+.section-4__icons {
+    margin: 0 0 190px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0 -15px 50px -15px;
+}
+
+.section-4__element {
+    padding: 0 15px 26px 15px;
+    width: 33.33%;
+    box-sizing: border-box;
+
+}
+
+.section-4__element-icon {
+    background-color: $colorBackgroundLi;
+    border-radius: 4%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4__element-icon--height {
+    height: 90%;
 }
