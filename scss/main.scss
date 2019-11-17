@@ -98,6 +98,18 @@ h1, h2 {
         border: none;
         border-radius: 15px;
     }
+    &__submit:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    &__submit:active {
+        background-color: black;
+        color: rgb(250, 146, 146);
+        transform: scale(1.2);
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
 }
 
 .section-block {
@@ -111,6 +123,14 @@ h1, h2 {
         justify-content: flex-end;
         color: white;
         font-size: 24px;
+    }
+    &__menu:hover {
+        color: black;
+        transition-duration: 0.3s;
+    }
+    &__menu:active {
+        color: rgb(212, 14, 14);
+        transition-duration: 0.3s;
     }
 
     &__avatar {
@@ -154,6 +174,19 @@ h1, h2 {
     height: 54px;
     border-radius: 30px;
     color: #3695ff;
+}
+.section-block__submit:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.section-block__submit:active {
+    background-color: black;
+    color: rgba(255, 0, 0, 0.822);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
 
 }
 .section-block__scroll {
