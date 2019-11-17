@@ -68,7 +68,7 @@ h1, h2 {
     width: 100%;
     height: 874px;
     box-sizing: border-box;
-    background-image: url(../images/gbheader.jpg);
+    background-image: url(../img/gbheader.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -107,28 +107,56 @@ h1, h2 {
     width: 100%;
     margin: 78px 0 0 0;
 
-    // &__menu {
-    //     width: 42px;
-    //     height: 42px;
-    //     margin: 50px 0;
-    //     border: 1px solid red;
-    // }
     &__avatar {
         width: 150px;
         height: 150px;
         background-color: white;
         border: 1px solid white;
         border-radius: 50%;
-        margin: 20px auto;
+        margin: 178px auto 70px auto;
         
     }
     &__info {
        text-align: center;
     }
+    &__button {
+        margin: 0 auto 144px auto;
+    }
 }
 .block__caption {
+    width: 720px;
     color: white;
+    font-size: $fontSizeBase + 34px;
+    text-transform: uppercase;
+    margin: 0 auto;
 }
+
+.block__text {
+    width: 772px;
+    color: #dde3eb;
+    margin: 0 auto 76px auto;
+    font-size: $fontSizeBase;
+}
+.section-block__submit {
+    border: none;
+    width: 208px;
+    height: 54px;
+    border-radius: 30px;
+    color: #3695ff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .title {
     text-align: center;
