@@ -1,0 +1,31 @@
+.footer {
+    background-color: #469dff;
+    padding: 100px 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__title {
+    font-weight: 300;
+    font-size: $fontSizeBase + 16px;
+    color: #fff;
+}
+
+.footer__link {
+    font-family: $fontBase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: $fontSizeBase + 16px;
+    color: #fff;
+
+}
+
+.btn--footer {
+    margin: 0 0 0 50px;
+
+    
+}
