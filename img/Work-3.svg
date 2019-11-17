@@ -1,0 +1,33 @@
+<svg id="Work_3" data-name="Work 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287" height="248" viewBox="0 0 287 248">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #469dff;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="287" height="248" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-color="#303030" flood-opacity="0.04"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Prostokąt_3" data-name="Prostokąt 3" class="cls-1" x="6" y="6" width="274" height="235"/>
+  <rect id="Prostokąt_4" data-name="Prostokąt 4" class="cls-2" x="22" y="24" width="242" height="21"/>
+  <rect id="Prostokąt_4_kopia" data-name="Prostokąt 4 kopia" class="cls-2" x="22" y="55" width="242" height="39"/>
+  <g id="Grupa_17" data-name="Grupa 17">
+    <rect id="Prostokąt_5" data-name="Prostokąt 5" class="cls-2" x="51" y="105" width="184" height="6"/>
+    <rect id="Prostokąt_5_kopia" data-name="Prostokąt 5 kopia" class="cls-2" x="51" y="116" width="184" height="6"/>
+    <rect id="Prostokąt_5_kopia_2" data-name="Prostokąt 5 kopia 2" class="cls-2" x="79" y="127" width="128" height="6"/>
+  </g>
+  <g id="Grupa_15" data-name="Grupa 15">
+    <rect id="Prostokąt_4_kopia_2" data-name="Prostokąt 4 kopia 2" class="cls-2" x="22" y="145" width="69.156" height="78"/>
+    <rect id="Prostokąt_4_kopia_3" data-name="Prostokąt 4 kopia 3" class="cls-2" x="108" y="145" width="156" height="78"/>
+  </g>
+</svg>
