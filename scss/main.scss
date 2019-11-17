@@ -1,5 +1,10 @@
-$fontSizeBase: 12px;
-$fontBase: Arial;
+$fontSizeBase: 16px;
+$fontBase: 'Lato', sans-serif;
+$fontSecondary: 'Montserrat', sans-serif;;
+$bgcolor: #aae3e3;
+$fontColorTittle: #3677fd;
+
+
 
 body {
     background: #ffffff;
@@ -46,3 +51,76 @@ h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
 }
+
+.section--expert {
+    background-color:$bgcolor; 
+}
+
+.mainer {
+    max-width: 1170px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.block-skills-title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    .block__title {
+        padding: 100px 0;
+        font-size:$fontSizeBase + 34;
+        font-weight: lighter;
+        color:$fontColorTittle;
+    }
+}
+
+.grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .grid-wrapper__sell {
+        max-width: 360px;
+        margin-bottom: 90px;
+
+
+        .block-skills {
+            text-align: center;
+            padding: 0 10px;
+
+            .block-skills-img {
+                margin: 0 auto;
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                border: 1px solid #999797;
+                margin-bottom: 55px;
+
+                .block-skills-img__img {
+                    padding-top: 35px;
+                }
+            }
+
+            .block-skills__title {
+                font-size:$fontBase + 8;
+                color: $fontColorTittle;
+                font-weight: bold;
+            } 
+
+           .block-skills__text {
+               font-size: $fontSizeBase;
+               font-weight: normal;
+           }
+
+        }
+    }
+}
+
+
+
+
+
+
+
