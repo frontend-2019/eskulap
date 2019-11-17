@@ -3,7 +3,7 @@ $fontSizeBase: 16px;
 $fontBase: 'Lato', sans-serif;
 $fontSecondary: 'Montserrat';
 $colorLite:white;
-$colorBase:#9bcaff;
+$colorBase:#3695ff;
 
 @import 'clients.scss';
 @import 'footer.scss';
@@ -56,6 +56,25 @@ h1, h2 {
     padding: 0 0 10px 0;
 }
 
+
+.btn {
+    color: $colorBase;
+    text-transform: uppercase;
+    font-size: $fontSizeBase;
+    font-family: $fontBase;
+    font-weight: bold;
+    background-color: $colorLite;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 22px 75px;
+    outline: none;
+    border: none;
+
+    &:hover {
+        background-color: #ffffffa1;
+    }
+}
+
 .mainer {
     max-width: 1170px;
     margin: 0 auto;
@@ -101,17 +120,9 @@ h1, h2 {
     }
 }
 
-.button{
-    color: $colorBase;
-    text-transform: uppercase;
-    font-size: $fontSizeBase;
-    font-family: $fontBase;
-    font-weight: bold;
+.btn--title{
     color:$colorBase;
-    width: 205px;
-    background-color: $colorLite;
-    border: none;
-    border-radius: 25px;
-    padding:  20px 0;
+    // padding:  20px 0;
     margin-bottom: 150px;
 }
+
