@@ -2,12 +2,21 @@ $fontSizeBase: 16px;
 $fontBase: 'Lato', sans-serif;
 $fontSecondary: 'Montserrat', sans-serif;
 $colorTitle: #3695ff;
+$colorExoert: #f1f8ff;
+$colorTextExoert: #3681fe;
+$colorLite:white;
+$colorBase:#3695ff;
+
+@import 'clients.scss';
+@import 'footer.scss';
+@import 'about.scss';
 
 body {
-    background: #ffffff;
+    background: #fff;  
     text-decoration: none;
     width: 100%;
     height: 100%;
+    margin: 0 auto; 
 }
 
 body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
@@ -49,7 +58,8 @@ h1, h2 {
     padding: 0 0 10px 0;
 }
 
-.mainer {
+
+.mainer{
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
@@ -81,5 +91,152 @@ h1, h2 {
 
 .works__img:hover {
     box-shadow: 0px 0px 12px 0px #c0c0c0;
-   }
+}
 
+.btn {
+    color: $colorBase;
+    text-transform: uppercase;
+    font-size: $fontSizeBase;
+    font-family: $fontBase;
+    font-weight: bold;
+    background-color: $colorLite;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 22px 75px;
+    outline: none;
+    border: none;
+
+    &:hover {
+        background-color: #ffffffa1;
+    }
+}
+
+.menu {
+   position: relative;
+  }
+  
+  .menu__icon {
+  
+   width: 45px;
+   height: 35px;
+
+   cursor: pointer;
+   position: absolute;
+   top: 104px;
+   right: 0;
+  }
+
+.menu__icon-line{
+    width: 25px;
+    height: 2px;
+    background-color: $colorLite;
+    position: relative;
+    display: block;
+  }
+  .menu__icon-line:before,
+  .menu__icon-line:after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: $colorLite;
+    right: 0px;
+    top: -6px;  
+    opacity: 1;
+   
+  
+  }
+  .menu__icon-line:after{
+    top: auto;
+    bottom: -6px;
+    
+  }
+
+.exoert{
+    background-color: $colorExoert; 
+    &__title{
+        font: 300 50px $fontBase;
+        color: $colorTextExoert;
+        text-align: center;
+        padding: 100px 0 110px 0;
+    } 
+    &__filling{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__cells{
+        max-width: 345px;
+        margin: 0 45px 100px 0;
+        text-align: center;
+        // &__img{
+        // border: 2px solid #bac3cc;
+        // width: 142px;
+        // height: 142px;
+        // border-radius: 50%;
+        // text-align: center;
+        // }
+            // &____title{
+            //     margin: 60px 0 33px 0;
+            //     font: 700 24px $fontBase;
+            //     color: $colorTextExoert;
+            // }
+    }
+
+}
+.cells__img{
+    
+    border: 2px solid #bac3cc;
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    padding: 40px;
+
+}
+.cells__title{
+    margin: 60px 0 33px 0;
+    font: 700 24px $fontBase;
+    color: $colorTextExoert;
+}
+.cells__text{
+    font: 400 16px $fontBase;
+    line-height: 35px;
+}
+
+.title{
+    background-image: url(../img/bg-title.png);
+    background-size: cover;
+    text-transform: uppercase;
+    text-align: center;
+    &__logo{
+        padding-top: 185px;
+        text-align: center;
+        padding-bottom: 75px;
+    }
+    &__name{
+        font-size: $fontSizeBase + 34;
+        color: $colorLite;
+    
+        font-weight: bold;
+        max-width: 810px;
+        margin: 0 auto;
+        font-family: $fontBase;
+        padding-bottom: 40px;
+    }
+    &__text{
+        font-size: $fontSizeBase;
+        color: $colorLite;
+        font-weight:300 ;
+    max-width: 770px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    }
+}
+.btn--title{
+    color:$colorBase;
+    // padding:  20px 0;
+    margin-bottom: 150px;
+}
