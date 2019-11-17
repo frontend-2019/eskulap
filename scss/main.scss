@@ -198,7 +198,7 @@ h2 {
     height: 150px;
     background-color: #fff;
     border-radius: 50%;
-    margin: 0 auto 50px;
+    margin: 0 auto 70px;
     position: relative;
 }
 
@@ -229,11 +229,13 @@ h2 {
     color: #fff;
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .text {
     color: #5a5a5a;
     margin: 0 0 75px 0;
+    line-height: 36px;
 }
 
 .text--header {
@@ -243,6 +245,10 @@ h2 {
     font-weight: 300;
     text-transform: uppercase;
     opacity: 0.8;
+}
+
+.hide {
+    display: none;
 }
 
 .button {
@@ -261,6 +267,10 @@ h2 {
     transition: all .3s;
     margin: 0 auto;
     border-radius: 24px;
+
+    &--header {
+        margin-bottom: 80px;
+    }
 }
 
 .button:hover {
@@ -377,7 +387,7 @@ h2 {
         font-weight: 300;
         color: #d2d2d2;
         font-size: $fontSizeBase + 34;
-        line-height: 96px;
+        line-height: 90px;
 
         &:hover {
             border: none;
@@ -401,7 +411,7 @@ h2 {
     &__list {
         list-style: none;
         margin: 0 auto;
-        padding: 70px 0;
+        padding: 60px 0;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -419,6 +429,7 @@ h2 {
         justify-content: center;
         padding: 10px;
         line-height: 50px;
+        cursor: pointer;
 
         &:hover {
             background-color: #367ffe;
