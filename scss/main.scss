@@ -208,7 +208,29 @@ h2 {
     background-color: #fff;
     border-radius: 50%;
     margin: 0 auto 50px;
-    border: solid rgb(255, 255, 255, 0.5) 10px;
+    position: relative;
+}
+
+.circle:after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: solid 8px rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: -8px;
+    left: -8px;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
+    width: 166px;
+    height: 166px;
+    border: solid 10px rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -18px;
+    left: -18px;
 }
 
 .title {
