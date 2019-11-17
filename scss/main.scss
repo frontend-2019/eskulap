@@ -93,13 +93,6 @@ h2 {
     text-align: center;
 }
 
-.block__title {
-    padding: 100px 0;
-    font-size: $fontSizeBase + 34;
-    font-weight: lighter;
-    color: $fontColorTittle;
-}
-
 .grid-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -400,6 +393,7 @@ h2 {
 }
 
 .subtitle {
-    color: #3677fd;
     font-weight: 300;
+    padding: 18px 0 70px;
+    color: $fontColorTittle;
 }
