@@ -63,6 +63,39 @@ h1, h2 {
     padding: 0 15px;
 }
 
+.section__works {
+    padding: 92px 0 192px 0;   
+}
+
+.works__title {
+    font-size: $fontSizeBase + 34px;
+    font-weight: 300;
+    color: $colorTitle;
+    text-align: center;
+    padding-bottom: 105px;
+}
+
+.wrapper-works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cell {
+    width: 30%;
+    padding-bottom: 30px;
+    transition-duration: 0.3s;
+}
+
+.works__img {
+    padding: 0 15px 0 0;
+} 
+
+.works__img:hover {
+    box-shadow: 0px 0px 12px 0px #c0c0c0;
+}
+
 .btn {
     color: $colorBase;
     text-transform: uppercase;
