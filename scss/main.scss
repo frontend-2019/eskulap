@@ -4,6 +4,7 @@ $fontBase: 'Lato', sans-serif;
 $fontSecondary: 'Montserrat', sans-serif;
 $fontCol: #469dff;
 $fontBgBox: #f4f4f4;
+$fontFoo: #f1f8ff;
 
 body {
     background: #ffffff;
@@ -234,4 +235,46 @@ h2 {
 .subtitle {
     color: #3677fd;
     font-weight: 300;
+}
+
+.head--footer {
+    margin: 0;
+    padding: 70px 0;
+}
+.soc-box {
+    margin: 0;
+    padding: 0;
+}
+.section--social-net {
+    background-color: $fontFoo;
+    margin: 0;
+    padding: 0;
+}
+.wrapper--social-net {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block--social-net {
+    margin: 0 30px;
+}
+.social-net__img {
+    margin: 20px 0;
+}
+.foo {
+    background-color: $fontCol;
+}
+.foo__text {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.foo__text-light {
+    font-size: $fontSizeBase + 10;
+    color: $fontBgBox;
+}
+.foo__text-bold {
+    font-family: $fontBase;
+    font-weight: bold;
 }
