@@ -1,7 +1,6 @@
 $fontSizeBase: 16px;
 $fontBase: 'Lato', sans-serif;
 $fontSecondary: 'Montserrat', sans-serif;
-$colorTitle: #3695ff;
 $colorExoert: #f1f8ff;
 $colorTextExoert: #3681fe;
 $colorLite:white;
@@ -57,7 +56,6 @@ h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
 }
-
 
 .mainer{
     max-width: 1170px;
@@ -245,3 +243,4 @@ img{
     // padding:  20px 0;
     margin-bottom: 150px;
 }
+
