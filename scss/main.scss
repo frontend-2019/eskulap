@@ -1,8 +1,14 @@
-$fontSizeBase: 12px;
-$fontBase: Arial;
+
+$fontSizeBase: 16px;
+$fontBase: 'Lato', sans-serif;
+$fontSecondary: 'Montserrat';
+
+@import 'clients.scss';
+@import 'footer.scss';
+@import 'about.scss';
 
 body {
-    background: #ffffff;
+    background: #fff;
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -45,4 +51,10 @@ a {
 h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
+}
+
+.mainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
 }
