@@ -1,6 +1,9 @@
 $fontSizeBase: 16px;
-$fontBase: 'Lato', sans-serif;
-$fontSecondary: 'Montserrat', sans-serif;;
+$fontBase: 'Lato',
+sans-serif;
+$fontSecondary: 'Montserrat',
+sans-serif;
+;
 $bgcolor: #aae3e3;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
@@ -68,7 +71,7 @@ h2 {
 }
 
 .section--expert {
-    background-color:$bgcolor; 
+    background-color: $bgcolor;
 }
 
 .section--body {
@@ -91,9 +94,9 @@ h2 {
 
 .block__title {
     padding: 100px 0;
-    font-size:$fontSizeBase + 34;
+    font-size: $fontSizeBase + 34;
     font-weight: lighter;
-    color:$fontColorTittle;
+    color: $fontColorTittle;
 }
 
 .grid-wrapper {
@@ -122,14 +125,14 @@ h2 {
 
         &__img {
             padding-top: 35px;
-            }
+        }
     }
 
     &__title {
-        font-size:$fontBase + 8;
+        font-size: $fontBase + 8;
         color: $fontColorTittle;
         font-weight: bold;
-    } 
+    }
 
     &__text {
         font-size: $fontSizeBase;
@@ -145,18 +148,22 @@ h2 {
     color: $fontCol;
     font-family: $fontBase;
 }
+
 .base-date {
     display: flex;
 }
+
 .row {
     margin: 100px auto;
 }
+
 .col-6 {
     justify-content: center;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
+
 .box-light {
     width: 350px;
     height: 300px;
@@ -168,10 +175,12 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 .box-light__bottom {
     width: 250px;
     height: 200px;
 }
+
 .box-light__center {
     width: 250px;
     height: 200px;
@@ -198,6 +207,7 @@ h2 {
     background-color: #fff;
     border-radius: 50%;
     margin: 0 auto 50px;
+    border: solid rgb(255, 255, 255, 0.5) 10px;
 }
 
 .title {
@@ -209,6 +219,7 @@ h2 {
 
 .text {
     color: #5a5a5a;
+    margin: 0 0 75px 0;
 }
 
 .text--header {
@@ -234,7 +245,7 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     transition: all .3s;
-    margin: 30px auto;
+    margin: 0 auto;
     border-radius: 24px;
 }
 
@@ -256,7 +267,7 @@ h2 {
 }
 
 .nav {
-    display: none;
+
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -306,6 +317,9 @@ h2 {
     .toggler {
         width: 40px;
         display: block;
+        position: absolute;
+        top: 10px;
+        right: 40px;
     }
 
     .toggler__icon {
@@ -348,6 +362,7 @@ h2 {
         background-color: #fff;
         top: -14px;
         transition-duration: 0.3s;
+        left: 0;
     }
 
     .toggler__line:after {
