@@ -1,5 +1,10 @@
-$fontSizeBase: 12px;
-$fontBase: Arial;
+$fontSizeBase: 16px;
+$fontBase: 'Lato', sans-serif;
+$fontSecondary: 'Montserrat', sans-serif;
+$colorExoert: #f1f8ff;
+$colorTextExoert: #3681fe;
+
+
 
 body {
     background: #ffffff;
@@ -45,4 +50,62 @@ a {
 h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
+}
+.mainer{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.exoert{
+    background-color: $colorExoert; 
+    &__title{
+        font: 300 50px $fontBase;
+        color: $colorTextExoert;
+        text-align: center;
+        padding: 100px 0 110px 0;
+    } 
+    &__filling{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__cells{
+        max-width: 345px;
+        margin: 0 45px 100px 0;
+        text-align: center;
+        // &__img{
+        // border: 2px solid #bac3cc;
+        // width: 142px;
+        // height: 142px;
+        // border-radius: 50%;
+        // text-align: center;
+        // }
+            // &____title{
+            //     margin: 60px 0 33px 0;
+            //     font: 700 24px $fontBase;
+            //     color: $colorTextExoert;
+            // }
+    }
+
+}
+.cells__img{
+    
+    border: 2px solid #bac3cc;
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    padding: 40px;
+
+}
+.cells__title{
+    margin: 60px 0 33px 0;
+    font: 700 24px $fontBase;
+    color: $colorTextExoert;
+}
+.cells__text{
+    font: 400 16px $fontBase;
+    line-height: 35px;
 }
