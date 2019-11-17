@@ -1,5 +1,7 @@
-$fontSizeBase: 12px;
-$fontBase: Arial;
+$fontSizeBase: 16px;
+$fontBase: 'Lato', sans-serif;
+$fontSecondary: 'Montserrat', sans-serif;
+$colorTitle: #3695ff;
 
 body {
     background: #ffffff;
@@ -46,3 +48,38 @@ h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
 }
+
+.mainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section__works {
+    padding: 92px 0 192px 0;   
+}
+
+.works__title {
+    font-size: $fontSizeBase + 34px;
+    font-weight: 300;
+    color: $colorTitle;
+    text-align: center;
+    padding-bottom: 105px;
+}
+
+.wrapper-works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cell {
+   padding-bottom: 30px;
+   transition-duration: 0.3s;
+}
+
+.works__img:hover {
+    box-shadow: 0px 0px 12px 0px #c0c0c0;
+   }
+
