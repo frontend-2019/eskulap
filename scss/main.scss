@@ -58,6 +58,14 @@ h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
 }
+
+
+
+
+
+
+
+
 .mainer {
     max-width: 1170px;
     margin: 0 auto;
@@ -166,8 +174,8 @@ h1, h2 {
     font-size: $fontSizeBase;
     font-family: $fontBase;
     line-height: 34px;
-    
 }
+
 .section-block__submit {
     border: none;
     width: 208px;
@@ -175,20 +183,22 @@ h1, h2 {
     border-radius: 30px;
     color: #3695ff;
 }
+
 .section-block__submit:hover {
     background-color: black;
     color: white;
     cursor: pointer;
     transition-duration: 0.3s;
 }
+
 .section-block__submit:active {
     background-color: black;
     color: rgba(255, 0, 0, 0.822);
     cursor: pointer;
     transform: scale(1.2);
     transition-duration: 0.3s;
-
 }
+
 .section-block__scroll {
     margin: 0 auto 30px auto;
     width: 42px;
