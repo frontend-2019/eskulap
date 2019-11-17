@@ -112,21 +112,22 @@ h2 {
     text-align: center;
     padding: 0 10px;
 
-    &-img {
+    &__img {
         margin: 0 auto;
         width: 140px;
         height: 140px;
         border-radius: 50%;
         border: 1px solid #999797;
         margin-bottom: 55px;
-
-        &__img {
-            padding-top: 35px;
-            }
     }
 
+    &__image {
+         padding-top:35px;
+    }
+    
+
     &__title {
-        font-size:$fontBase + 8;
+        font-size:$fontSizeBase + 8;
         color: $fontColorTittle;
         font-weight: bold;
     } 
