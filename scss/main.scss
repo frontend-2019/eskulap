@@ -5,6 +5,7 @@ $colorExoert: #f1f8ff;
 $colorTextExoert: #3681fe;
 $colorLite:white;
 $colorBase:#3695ff;
+$colorTitle:#3681fe;
 
 @import 'clients.scss';
 @import 'footer.scss';
@@ -245,5 +246,5 @@ img{
     color:$colorBase;
     // padding:  20px 0;
     margin-bottom: 150px;
-}
+} 
 
