@@ -1,5 +1,8 @@
-$fontSizeBase: 12px;
-$fontBase: Arial;
+$fontSizeBase: 16px;
+$fontBase: 'Lato', sans-serif;
+$fontSecondary: 'Montserrat', sans-serif;
+$fontCol: #469dff;
+$fontBgBox: #f4f4f4;
 
 body {
     background: #ffffff;
@@ -45,4 +48,54 @@ a {
 h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
+}
+
+.section-body {
+    width: 100%;
+    background-color: #ffffff;
+}
+.mainer {
+    max-width: 1170px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.head {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    font-size: $fontSizeBase*3;
+    color: $fontCol;
+    font-family: $fontBase;
+}
+.base-date {
+    display: flex;
+}
+.row {
+    margin: 100px auto;
+}
+.col-6 {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-light {
+    width: 350px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: $fontBgBox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-light__bottom {
+    width: 250px;
+    height: 200px;
+}
+.box-light__center {
+    width: 250px;
+    height: 200px;
 }
