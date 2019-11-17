@@ -1,5 +1,6 @@
-$fontSizeBase: 12px;
-$fontBase: Arial;
+$fontSizeBase: 16px;
+$fontBase: 'Lato', sans-serif;
+$fontSecondary: 'Montserrat', sans-serif;
 
 body {
     background: #ffffff;
@@ -45,4 +46,94 @@ a {
 h1, h2 {
     font-size: $fontSizeBase + 10;
     padding: 0 0 10px 0;
+}
+
+.section   {
+    padding: 90px 0;
+}
+
+.mainer {
+   
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-2__title {
+    
+    font-size: 50px;
+    font-weight: 300;
+    color: #3695ff;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-2__text {
+    font-family: 'Lato', sans-serif;
+    color: #5a5a5a;
+    line-height: 35px;
+    text-align: center;
+}
+
+.section-5{
+    background: #f1f8ff;
+    min-height: 363;
+}
+
+.section-5__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    color: #3695ff;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.section-5__block-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.section-5__icon{
+    display: block;
+    max-width: 100%;
+}
+
+
+.section-6 {
+    background: url(/img/footer-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-6__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-text{
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    margin-right: 60px;;
+}
+
+.section-6__button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3695ff;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+}
+
+.button__block {
+    background: white;
+    text-align: center;
+    height: 55px;
+    width: 200px;
+    border-radius: 26px;
+    
 }
