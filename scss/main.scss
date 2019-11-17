@@ -4,7 +4,7 @@ sans-serif;
 $fontSecondary: 'Montserrat',
 sans-serif;
 ;
-$bgcolor: #aae3e3;
+$bgcolor: #f1f8ff;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
 $fontBgBox: #f4f4f4;
@@ -102,7 +102,7 @@ h2 {
 .grid-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .grid-wrapper__sell {
@@ -115,21 +115,22 @@ h2 {
     text-align: center;
     padding: 0 10px;
 
-    &-img {
+    &__img {
         margin: 0 auto;
         width: 140px;
         height: 140px;
         border-radius: 50%;
         border: 1px solid #999797;
         margin-bottom: 55px;
-
-        &__img {
-            padding-top: 35px;
-        }
     }
 
+    &__image {
+        padding-top: 35px;
+    }
+
+
     &__title {
-        font-size: $fontBase + 8;
+        font-size: $fontSizeBase + 8;
         color: $fontColorTittle;
         font-weight: bold;
     }
