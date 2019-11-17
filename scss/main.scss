@@ -1,7 +1,11 @@
 $fontSizeBase: 16px;
-
-$fontBase: 'Lato', sans-serif;
-$fontSecondary: 'Montserrat', sans-serif;
+$fontBase: 'Lato',
+sans-serif;
+$fontSecondary: 'Montserrat',
+sans-serif;
+;
+$bgcolor: #f1f8ff;
+$fontColorTittle: #3677fd;
 $fontCol: #469dff;
 $fontBgBox: #f4f4f4;
 $fontFoo: #f1f8ff;
@@ -67,16 +71,71 @@ h2 {
     padding: 0 0 10px 0;
 }
 
-.section-body {
+.section--expert {
+    background-color: $bgcolor;
+}
+
+.section--body {
     background-color: #ffffff;
 }
 
 .mainer {
     max-width: 1170px;
-    padding: 0 15px;
+    padding: 82px 15px;
     box-sizing: border-box;
     margin: 0 auto;
+    position: relative;
 }
+
+
+.block-skills-title {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-wrapper__sell {
+    max-width: 360px;
+    margin-bottom: 90px;
+}
+
+
+.block-skills {
+    text-align: center;
+    padding: 0 10px;
+
+    &__img {
+        margin: 0 auto;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 1px solid #999797;
+        margin-bottom: 55px;
+    }
+
+    &__image {
+        padding-top: 35px;
+    }
+
+
+    &__title {
+        font-size: $fontSizeBase + 8;
+        color: $fontColorTittle;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: $fontSizeBase;
+        font-weight: normal;
+    }
+}
+
 .head {
     display: block;
     margin: 50px auto;
@@ -85,18 +144,22 @@ h2 {
     color: $fontCol;
     font-family: $fontBase;
 }
+
 .base-date {
     display: flex;
 }
+
 .row {
     margin: 100px auto;
 }
+
 .col-6 {
     justify-content: center;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
+
 .box-light {
     width: 350px;
     height: 300px;
@@ -108,23 +171,22 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 .box-light__bottom {
     width: 250px;
     height: 200px;
 }
+
 .box-light__center {
     width: 250px;
     height: 200px;
-}
-
-.section {
-    padding: 100px 0;
 }
 
 .section--header {
     background-color: #3677fd;
     text-align: center;
     position: relative;
+    padding: 100px 0 0 0;
 }
 
 .section--about-me {
@@ -138,6 +200,29 @@ h2 {
     background-color: #fff;
     border-radius: 50%;
     margin: 0 auto 50px;
+    position: relative;
+}
+
+.circle:after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: solid 8px rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: -8px;
+    left: -8px;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
+    width: 166px;
+    height: 166px;
+    border: solid 10px rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -18px;
+    left: -18px;
 }
 
 .title {
@@ -149,6 +234,7 @@ h2 {
 
 .text {
     color: #5a5a5a;
+    margin: 0 0 75px 0;
 }
 
 .text--header {
@@ -174,7 +260,7 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     transition: all .3s;
-    margin: 30px auto;
+    margin: 0 auto;
     border-radius: 24px;
 }
 
@@ -195,46 +281,122 @@ h2 {
     z-index: 1;
 }
 
+.toggler {
+    width: 25px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    z-index: 5;
+
+    &__icon {
+        width: 25px;
+        height: 19px;
+        display: block;
+        position: relative;
+        z-index: 5;
+
+        &--open .toggler__line {
+            background-color: transparent;
+            transform: translateX(5px);
+        }
+
+        &--open .toggler__line:before {
+            transform: rotate(45deg) translateY(10px);
+            background-color: $fontColorTittle;
+        }
+
+        &--open .toggler__line:after {
+            transform: rotate(-45deg) translateY(-10px);
+            background-color: $fontColorTittle;
+        }
+    }
+
+    &__line {
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 8px;
+        display: block;
+        transition-duration: 0.3s;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 2px;
+            background-color: #fff;
+            top: -7px;
+            transition-duration: 0.3s;
+            left: 0;
+        }
+
+        &:after {
+            top: auto;
+            bottom: -7px;
+        }
+    }
+}
+
 .nav {
-    display: none;
+    position: absolute;
+    top: 0;
     text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #262626;
-    line-height: 25px;
-    margin: 0 18px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
+    font-weight: 300;
+    color: #d2d2d2;
     transition: all .3s;
-    border-top: 3px solid transparent;
-}
+    display: none;
+    background-color: #fff;
+    border-radius: 10px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    z-index: 2;
+    padding: 90px 0 0 0;
 
-.nav__list {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-}
+    &__list {
+        flex-direction: column;
+        margin: 0 auto;
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        border: none;
+        max-width: 420px;
+    }
 
-.nav__item {
-    padding: 0 20px;
-}
+    &__item {
+        padding: 0;
 
-.nav__link {
-    text-decoration: none;
-    padding: 9px 0;
-    font-weight: bold;
-    border-top: 3px solid transparent;
-    color: #262626;
-}
+    }
 
-.nav__link:hover,
-.nav__link--active {
-    border-top-color: #fff;
+    &__link {
+        display: block;
+        text-align: center;
+        border: none;
+        text-decoration: none;
+        padding: 9px 0;
+        font-weight: 300;
+        color: #d2d2d2;
+        font-size: $fontSizeBase + 34;
+
+        &:hover {
+            border: none;
+            color: $fontColorTittle;
+        }
+    }
+
+    &--open {
+        display: block;
+        position: absolute;
+
+    }
 }
 
 .subtitle {
-    color: #3677fd;
     font-weight: 300;
+    padding: 18px 0 70px;
+    color: $fontColorTittle;
 }
 
 .head--footer {
@@ -268,13 +430,24 @@ h2 {
 .foo__text {
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding: 0;
+    margin: 0;
 }
 .foo__text-light {
     font-size: $fontSizeBase + 10;
     color: $fontBgBox;
+    opacity: 0.7;
 }
 .foo__text-bold {
+    font-size: $fontSizeBase + 10;
+    color: $fontBgBox;
     font-family: $fontBase;
     font-weight: bold;
+    padding: 0 0 0 10px;
+}
+.foo__button {
+    margin: -2px 50px;
+    padding: 0;
+    outline: none;
+    font-size: $fontSizeBase;
 }
