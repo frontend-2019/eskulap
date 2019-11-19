@@ -3,6 +3,7 @@
 @import 'footer.scss';
 @import 'about.scss';
 
+
 body {
     background: $colorLite;  
     text-decoration: none;
@@ -39,6 +40,7 @@ input::-moz-focus-inner {
 a {
     text-decoration: none;
 
+
     &:hover {
         text-decoration: none;
     }
@@ -67,13 +69,16 @@ h1, h2 {
     }
  
     &__name{
-        font-size: $fontSizeBase + 34;
-        color: $colorLite;
-        font-weight: bold;
         max-width: 810px;
         margin: 0 auto;
-        font-family: $fontBase;
         padding-bottom: 40px;
+    }
+
+    &__link{
+        font-size: $fontSizeBase + 34;
+        color: $colorLite;
+        font-weight: bold;       
+        font-family: $fontBase;       
     }
 
     &__text{
@@ -169,6 +174,7 @@ h1, h2 {
     width: 110px;
     padding: 10px 0;
 }
+
 .nav{
     display: flex;
     flex-direction: column;
@@ -232,6 +238,7 @@ h1, h2 {
     &__language-img{
         padding: 0;
     }
+
 }
 .menu_state_open .nav{    
     position: fixed;
@@ -296,11 +303,15 @@ h1, h2 {
     background-color: $colorExoert; 
 
     &__title{
+        padding: 100px 0 110px 0;
+        text-align: center;
+    } 
+
+    &__title-link{
         font: 300 50px $fontBase;
         color: $colorTitle;
-        text-align: center;
-        padding: 100px 0 110px 0;
-    } 
+       
+    }
 
     &__filling{
         display: flex;
@@ -336,11 +347,13 @@ h1, h2 {
     padding: 92px 0 192px 0;   
 }
 .works__title {
+    padding-bottom: 105px;
+    text-align: center;
+}
+.works__title-link{
     font-size: $fontSizeBase + 34;
     font-weight: 300;
     color: $colorTitle;
-    text-align: center;
-    padding-bottom: 105px;
 }
 .wrapper-works {
     display: flex;

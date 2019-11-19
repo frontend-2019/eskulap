@@ -5,13 +5,14 @@
 }
 
 .section-clients__head {
-    font-family: 'Lato', sans-serif;
-    color: #3677fd;
-    font-weight: 300;
-    font-size: 50px;
     margin: 0 0 78px 0;
-    // font-size: $fontSizeBase + 34;
     text-align: center;
+}
+.section-clients__head-link{
+    font-family: $fontBase;
+    color: $colorBase;
+    font-weight: 300;
+    font-size: $fontSizeBase + 34;
 }
 
 .section-clients__wrapper {
