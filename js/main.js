@@ -6,7 +6,7 @@
 
 
 $(function () {
-    $('.block__toggler, .section-close').on('click', function () {
+    $('.toggler-button, .section-close').on('click', function () {
         $('.section-pop-up').toggleClass('section__enable');
     });
 });
