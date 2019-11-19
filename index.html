@@ -6,35 +6,66 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
+    <div class="shadow"></div>
+    <section class="symu">
+        <div class="symu__logo"><div class="symu__icon"></div></div>
+        <div class="symu__title">Thanks for downloading our template!</div>
+        <div class="symu__dec">Hope that you enjoy it well! Check also our site</div>
+        <button class="symu__btn" onclick="hideSymu()">www.symu.co</button>
+    </section>
     <section class="title">
-        <div class="mainer">
-            <div class="menu">
-                <div class="menu__icon">
-                    <span class="menu__icon-line"></span>
+         <div class="cookie">
+                <div class="cookie__text">This site uses cookies, so that my service can work better. </div>
+                <button class=" btn btn--cookie " onclick="acceptCookie()">Accept</button>
+            </div>
+         <div class="mainer">
+            <div class="nav">
+                <div class="menu">
+                    <div class="menu__icon">
+                        <span class="menu__icon-line"></span>
+                    </div>
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a class="nav__link" href="">About me</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">Services</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">My Works</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">Client</a></li>
+                        <li class="nav__item">
+                            <hr class="hr">
+                        </li>
+                    </ul>
+                    <div class="nav__social-icon">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-dribbble"></i></a>
+                        <a href=""><i class="fab fa-behance"></i></a>
+                    </div>
+                    <div class="nav__language">
+                        <div class="nav__language-name">Eng</div>
+                        <div class="nav__language-logo"><img class="nav__language-img" src="./img/eng.png" alt=""></div>
+                    </div>
                 </div>
             </div>
             <div class="title__logo">
-                <img class="title__logo-img" src="./img/logo.png" alt="">
+                <svg class="title__logo-svg" width="185" height="185">
+                    <circle r="82" cx="92" cy="92" fill="white" stroke="#589dfe" stroke-width="10" />
+               </svg>               
             </div>
-            <div class="title__name">free portfolio PSD template
-                FOR GRAPHIC designerS</div>
+            <h2 class="title__name">free portfolio PSD template
+                FOR GRAPHIC designerS</h2>
             <div class="title__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
         </div>
-        <button class="btn btn--title ">hire me</button>
+        <button class="btn btn--title" onclick="showSymu()">hire me</button>
     </section>
-
     <section class="section-about">
         <div class="mainer">
             <h2 class="section-about__title">About us</h2>
@@ -46,7 +77,6 @@
             </p>
         </div>
     </section>
-
     <section class="exoert">
         <div class="mainer">
             <p class="exoert__title">Exoert in</p>
@@ -108,35 +138,28 @@
             </div>
         </div>
     </section>
-
     <section>
         <div class="mainer">
             <div class="section__works">
                 <h2 class="works__title">
                     Latest Works
                 </h2>
-
                 <div class="wrapper-works">
                     <div class="cell">
                         <img class="works__img" src="/img/001.png" alt="img">
                     </div>
-
                     <div class="cell">
                         <img class="works__img" src="/img/002.png" alt="img">
                     </div>
-
                     <div class="cell">
                         <img class="works__img" src="/img/003.png" alt="img">
                     </div>
-
                     <div class="cell">
                         <img class="works__img" src="/img/004.png" alt="img">
                     </div>
-
                     <div class="cell">
                         <img class="works__img" src="/img/005.png" alt="img">
                     </div>
-
                     <div class="cell">
                         <img class="works__img" src="/img/006.png" alt="img">
                     </div>
@@ -144,7 +167,6 @@
             </div>
         </div>
     </section>
-
     <section class="section-clients">
         <div class="mainer">
             <h3 class="section-clients__head">Clients</h3>
@@ -156,7 +178,6 @@
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="mainer">
             <div class="footer__wrapper">
@@ -168,5 +189,4 @@
         </div>
     </footer>
 </body>
-
 </html>
