@@ -4,15 +4,15 @@
 @import 'footer.scss';
 @import 'about.scss';
 
-
-
 body {   
+
     background: $colorLite;  
     text-decoration: none;
     width: 100%;
     height: 100%;
     margin: 0 auto; 
     position: relative;
+
 }
 
 body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
@@ -29,10 +29,12 @@ body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
 input,
 textarea,
 select {
+
     outline: none;
     font-family: $fontBase;
     font-size: $fontSizeBase;
     box-sizing: border-box;
+    
 }
 
 input::-moz-focus-inner {
