@@ -1,9 +1,6 @@
 $fontSizeBase: 16px;
-$fontBase: 'Lato',
-sans-serif;
-$fontSecondary: 'Montserrat',
-sans-serif;
-;
+$fontBase: 'Lato',sans-serif;
+$fontSecondary: 'Montserrat',sans-serif;
 $bgcolor: #f1f8ff;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
@@ -229,6 +226,7 @@ h2 {
     color: #fff;
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .text {
@@ -237,7 +235,7 @@ h2 {
 }
 
 .text--header {
-
+    line-height: 25px;
     font-family: $fontBase;
     color: #fff;
     font-weight: 300;
@@ -272,6 +270,74 @@ h2 {
     -webkit-box-shadow: inset 0px 0px 17px -4px rgba(222, 222, 222, 0.7);
     box-shadow: inset 0px 0px 17px -4px rgba(222, 222, 222, 0.7);
 }
+
+.form {
+    margin: 0 auto;
+    max-width: 815px;
+    padding: 0;
+    position: relative;
+}
+
+.letter-form {
+    background-color: #ffffff;
+    padding: 65px 145px 65px 140px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute; 
+    top: -580px;
+    display: none;
+    
+
+    &__tittle {
+        font-family: $fontSecondary;
+        color: $fontColorTittle;
+        font-size: $fontSizeBase + 34;
+        font-weight: normal;
+        margin-bottom: 60px;
+    }
+
+
+    &__row {
+        flex-grow: 1;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 18px 0 18px 20px;
+        margin-bottom: 14px;
+
+        &--message {
+            height: 170px;
+        }
+    }
+
+    
+
+    &__submit {
+        text-transform: uppercase;
+        font-size: $fontSizeBase;
+        color: #fff;
+        font-weight: bold;
+        background-color: #3680fe;
+        border: none;
+        max-width: 204px;
+        margin: 0 auto;
+        padding: 20px 40px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: #1555c4;
+        }
+    }
+}
+
+.letter-form__input {
+    display: flex;
+    flex-direction: column; 
+}
+
+
 
 .scroll {
     position: fixed;
@@ -310,6 +376,7 @@ h2 {
             background-color: $fontColorTittle;
         }
     }
+
 
     &__line {
         width: 25px;
