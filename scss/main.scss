@@ -1,6 +1,8 @@
 $fontSizeBase: 16px;
-$fontBase: 'Lato',sans-serif;
-$fontSecondary: 'Montserrat',sans-serif;
+$fontBase: 'Lato',
+sans-serif;
+$fontSecondary: 'Montserrat',
+sans-serif;
 $bgcolor: #f1f8ff;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
@@ -282,21 +284,25 @@ h2 {
 
 .form {
     margin: 0 auto;
-    max-width: 815px;
     padding: 0;
     position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
 }
 
 .letter-form {
+    max-width: 815px;
     background-color: #ffffff;
     padding: 65px 145px 65px 140px;
     width: 100%;
     box-sizing: border-box;
     border-radius: 20px;
-    position: absolute; 
-    top: -580px;
-    display: none;
-    
+    position: fixed;
+    top: 80px;
+    right: auto;
+
+
 
     &__tittle {
         font-family: $fontSecondary;
@@ -305,7 +311,6 @@ h2 {
         font-weight: normal;
         margin-bottom: 60px;
     }
-
 
     &__row {
         flex-grow: 1;
@@ -318,8 +323,6 @@ h2 {
             height: 170px;
         }
     }
-
-    
 
     &__submit {
         text-transform: uppercase;
@@ -339,13 +342,12 @@ h2 {
             background-color: #1555c4;
         }
     }
-}
 
-.letter-form__input {
-    display: flex;
-    flex-direction: column; 
+    &__input {
+        display: flex;
+        flex-direction: column;
+    }
 }
-
 
 
 .scroll {
