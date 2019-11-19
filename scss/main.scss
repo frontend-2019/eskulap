@@ -236,7 +236,6 @@ h2 {
 }
 
 .text--header {
-    line-height: 25px;
     font-family: $fontBase;
     color: #fff;
     font-weight: 300;
@@ -251,8 +250,8 @@ h2 {
 .button {
     display: block;
     width: 205px;
-    height: 40px;
-    line-height: 40px;
+    height: 55px;
+    line-height: 55px;
     background-color: #fff;
     color: #3695ff;
     font-size: $fontBase;
@@ -287,19 +286,25 @@ h2 {
     display: flex;
     justify-content: center;
     z-index: 10;
+    display: none;
+
+    &--open {
+        display: flex;
+    }
+
+    &--close {
+        display: none;
+    }
 }
 
 .letter-form {
-    max-width: 815px;
+    width: 815px;
     background-color: #ffffff;
     padding: 65px 145px 65px 140px;
-    width: 100%;
     box-sizing: border-box;
     border-radius: 20px;
-    position: fixed;
-    top: 80px;
-    right: auto;
-
+    position: absolute;
+    top: -720px;
 
 
     &__tittle {
@@ -316,33 +321,10 @@ h2 {
         box-sizing: border-box;
         padding: 18px 0 18px 20px;
         margin-bottom: 14px;
+        resize: none;
 
         &--message {
             height: 170px;
-        }
-    }
-
-    .letter-form__icon {
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        display: block;
-        width: 30px;
-        height: 1px;
-        background-color: #000;
-        transform: rotate(45deg);
-        opacity: 0.8;
-
-        &::after {
-            content: '';
-            width: 30px;
-            height: 1px;
-            background-color: #000;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            transform: rotate(-90deg);
         }
     }
 
@@ -368,6 +350,35 @@ h2 {
     &__input {
         display: flex;
         flex-direction: column;
+    }
+}
+
+.close-form {
+    width: 25px;
+    height: 25px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: $fontColorTittle;
+        transform: rotate(-45deg) translate(-16px);
+    }
+
+    &:before {
+        transform: rotate(45deg) translateY(16px)
+    }
+
+    &--open {
+        display: block;
     }
 }
 

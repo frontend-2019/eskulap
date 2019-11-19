@@ -6,8 +6,8 @@ $(function () {
 });
 
 $(function () {
-    $('.button--center').on('click', function () {
-        // $(this).toggleClass('toggler__icon--open');
-        $('.js-form').buttonClass('letter-form--open');
+    $('.js-form-toggle').on('click', function () {
+        $('.js-form-toggle').toggleClass('close-form--open');
+        $('.js-form').toggleClass('form--open');
     });
 });
