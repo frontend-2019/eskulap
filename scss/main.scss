@@ -289,19 +289,25 @@ h2 {
     display: flex;
     justify-content: center;
     z-index: 10;
+    display: none;
+
+    &--open {
+        display: flex;
+    }
+
+    &--close {
+        display: none;
+    }
 }
 
 .letter-form {
-    max-width: 815px;
+    width: 815px;
     background-color: #ffffff;
     padding: 65px 145px 65px 140px;
-    width: 100%;
     box-sizing: border-box;
     border-radius: 20px;
-    position: fixed;
-    top: 80px;
-    right: auto;
-
+    position: absolute;
+    top: -600px;
 
 
     &__tittle {
@@ -318,6 +324,7 @@ h2 {
         box-sizing: border-box;
         padding: 18px 0 18px 20px;
         margin-bottom: 14px;
+        resize: none;
 
         &--message {
             height: 170px;
@@ -332,7 +339,6 @@ h2 {
         top: 30px;
         right: 30px;
     }
-
 
     .letter-form__icon {
         display: block;
@@ -380,6 +386,35 @@ h2 {
     &__input {
         display: flex;
         flex-direction: column;
+    }
+}
+
+.close-form {
+    width: 25px;
+    height: 25px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: $fontColorTittle;
+        transform: rotate(-45deg) translate(-16px);
+    }
+
+    &:before {
+        transform: rotate(45deg) translateY(16px)
+    }
+
+    &--open {
+        display: block;
     }
 }
 
