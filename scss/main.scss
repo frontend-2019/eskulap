@@ -238,7 +238,6 @@ h2 {
 }
 
 .text--header {
-    line-height: 25px;
     font-family: $fontBase;
     color: #fff;
     font-weight: 300;
@@ -253,8 +252,8 @@ h2 {
 .button {
     display: block;
     width: 205px;
-    height: 40px;
-    line-height: 40px;
+    height: 55px;
+    line-height: 55px;
     background-color: #fff;
     color: #3695ff;
     font-size: $fontBase;
@@ -307,7 +306,7 @@ h2 {
     box-sizing: border-box;
     border-radius: 20px;
     position: absolute;
-    top: -600px;
+    top: -720px;
 
 
     &__tittle {
