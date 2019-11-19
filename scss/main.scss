@@ -1,10 +1,13 @@
 $fontSizeBase: 16px;
 $fontBase: 'Lato', sans-serif;
+
+$colorBackgroundLi: #f4f4f4;
+
 $fontSecond: 'Montserrat', sans-serif;
 $colorBase: #3677fd;
 $colorSecond: #5a5a5a;
 
-
+ 
 body {
     background: #ffffff;
     text-decoration: none;
@@ -31,7 +34,7 @@ select {
     font-size: $fontSizeBase;
     box-sizing: border-box;
 }
-
+ 
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
@@ -60,7 +63,7 @@ h1, h2 {
     padding: 0 0 10px 0;
 }
 
-.section   {
+.section {
     padding: 90px 0;
 }
 
@@ -68,7 +71,57 @@ h1, h2 {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+    
 }
+
+.section-4 {
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-4__title {
+    margin: -30px 0 80px 0;
+    
+}
+
+.title__latest {
+    color: #3695ff;
+    font-size: 50px;
+    font-family: $fontBase;
+    font-weight: 300;
+}
+
+.section-4__icons {
+    margin: 0 0 190px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0 -15px 50px -15px;
+}
+
+.section-4__element {
+    padding: 0 15px 26px 15px;
+    width: 33.33%;
+    box-sizing: border-box;
+
+}
+
+.section-4__element-icon {
+    background-color: $colorBackgroundLi;
+    border-radius: 4%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4__element-icon--height {
+    height: 90%;
+}
+
+
 
 .section-2__title {
     font-size: 50px;
@@ -220,11 +273,14 @@ button__block:active {
     width: 100%;
     margin: 78px 0 0 0;
 
-    &__menu {
+    &__menu .block__toggler {
         display: flex;
         justify-content: flex-end;
-        color: white;
-        font-size: 24px;
+        .toggler-button {
+            color: white;
+            font-size: 26px;
+            cursor: pointer;
+        }
     }
     &__menu:hover {
         color: black;
@@ -242,14 +298,16 @@ button__block:active {
         border: 1px solid white;
         border-radius: 50%;
         margin: 58px auto 70px auto;
-        
     }
+
     &__info {
        text-align: center;
     }
+
     &__button {
         margin: 0 auto 144px auto;
     }
+    
 }
 .block__caption {
     width: 720px;
@@ -300,6 +358,220 @@ button__block:active {
     font-size: 40px;
     color: rgba(255, 255, 255, 0.664);
 }
+
+.section-pop-up {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1170px;
+    height: 712px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.section-pop-up::after{
+    content: '';
+    background-image: url(../img/lang.jpg);
+    background-size: cover;
+    width: 90px;
+    height: 24px;
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+.section-close {
+    background-image: url(../img/close.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+
+
+
+.section-hire-me {
+    position: absolute;
+    top: 167px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 814px;
+    text-align: center;
+    display: none;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;  
+    }
+
+    &__text {
+        width: 520px;
+        height: 46px;
+        border-radius: 15px;
+        border: 1px solid #b7c0c9;
+        margin: 0 auto 14px auto;
+        padding: 20px;
+    }
+
+    &__email {
+        width: 520px;
+        height: 46px;
+        border-radius: 15px;
+        border: 1px solid #b7c0c9;
+        margin: 0 auto 14px auto;
+        padding: 20px;
+    }
+
+    &__textarea {
+        width: 520px;
+        height: 180px;
+        border-radius: 15px;
+        border: 1px solid #b7c0c9;
+        margin: 0 auto 44px auto;
+        resize: none;
+        padding: 20px;
+
+    }
+
+    &__submit {
+        width: 210px;
+        height: 56px;
+        margin: 0 auto 62px auto;
+        border: none;
+        background-color: $colorBase;
+        border-radius: 30px;
+        color: white;
+        text-transform: uppercase;
+    }
+    &__submit:hover {
+        color:black;
+        background-color: #265cc9;
+        transition-duration: 0.3s;
+    }
+    &__submit:active {
+        color:red;
+        background-color: #0a0a0a;
+        transform: scale(1.2);
+        transition-duration: 0.3s;
+    }
+}
+.hire-me-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background-image: url(../img/close.jpg);
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    
+}
+.hire-me-text {
+    margin: 56px auto;
+    font-size: $fontSizeBase + 34px;
+    color: $colorBase;
+}
+
+.section__enable {
+    display: block;
+}
+
+.mob__nav {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.menu__nav {
+    margin: 0 auto 56px auto;
+    font-size: $fontSizeBase + 34;
+    font-weight: 300;
+    color: #d2d2d2;
+    font-family: $fontBase;
+}
+.menu__nav:hover {
+    color: $colorBase;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.menu__nav:active {
+    color: $colorBase;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+.menu__nav--active {
+    color: $colorBase;
+}
+
+.section-line {
+    width: 380px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e1e1
+}
+
+.mob__social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 56px 0;
+    list-style: none;
+}
+.menu__social {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    margin: 0 26px 0 0;
+
+    &  i {
+        color: white;
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+        font-size: 28px;
+    }
+    &:hover {
+        background-color: $colorBase;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+    &:active {
+        background-color: black;
+        transform: scale(1.2);
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+}
+.menu__social--active {
+    background-color: $colorBase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -371,4 +643,5 @@ button__block:active {
         width: 100%;
     }
 }
+
 
