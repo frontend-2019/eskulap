@@ -200,6 +200,28 @@ h1, h2 {
     border-radius: 26px;
     
 }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-header {
     width: 100%;
@@ -255,7 +277,7 @@ h1, h2 {
     width: 100%;
     margin: 78px 0 0 0;
 
-    &__menu {
+    &__menu .block__toggler {
         display: flex;
         justify-content: flex-end;
         color: white;
@@ -277,7 +299,6 @@ h1, h2 {
         border: 1px solid white;
         border-radius: 50%;
         margin: 58px auto 70px auto;
-        
     }
 
     &__info {
@@ -338,6 +359,135 @@ h1, h2 {
     font-size: 40px;
     color: rgba(255, 255, 255, 0.664);
 }
+
+.section-pop-up {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1170px;
+    height: 712px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.section-pop-up::after{
+    content: '';
+    background-image: url(../img/lang.jpg);
+    background-size: cover;
+    width: 90px;
+    height: 24px;
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+.section-close {
+    background-image: url(../img/close.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    cursor: pointer;
+}
+
+
+.section__enable {
+    display: block;
+}
+.section__disabled {
+    display: none;
+}
+.mob__nav {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.menu__nav {
+    margin: 0 auto 56px auto;
+    font-size: $fontSizeBase + 34;
+    font-weight: 300;
+    color: #d2d2d2;
+    font-family: $fontBase;
+}
+.menu__nav:hover {
+    color: $colorBase;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.menu__nav:active {
+    color: $colorBase;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+.menu__nav--active {
+    color: $colorBase;
+}
+
+.section-line {
+    width: 380px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e1e1
+}
+
+.mob__social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 56px 0;
+    list-style: none;
+}
+.menu__social {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    margin: 0 26px 0 0;
+
+    &  i {
+        color: white;
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+        font-size: 28px;
+    }
+    &:hover {
+        background-color: $colorBase;
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+    &:active {
+        background-color: black;
+        transform: scale(1.2);
+        cursor: pointer;
+        transition-duration: 0.3s;
+    }
+}
+.menu__social--active {
+    background-color: $colorBase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
