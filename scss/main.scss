@@ -1,8 +1,6 @@
 $fontSizeBase: 16px;
-$fontBase: 'Lato',
-sans-serif;
-$fontSecondary: 'Montserrat',
-sans-serif;
+$fontBase: 'Lato',sans-serif;
+$fontSecondary: 'Montserrat',sans-serif;
 $bgcolor: #f1f8ff;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
@@ -323,16 +321,6 @@ h2 {
             height: 170px;
         }
     }
-
-    .letter-form__icon {
-        width: 30px;
-        height: 30px;
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-    }
-
 
     .letter-form__icon {
         display: block;
