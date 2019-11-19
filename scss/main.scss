@@ -192,14 +192,6 @@ h1, h2 {
     text-decoration: none;
 }
 
-.button__block {
-    background: white;
-    text-align: center;
-    height: 55px;
-    width: 200px;
-    border-radius: 26px;
-    
-}
 
 .section-header {
     width: 100%;
@@ -465,6 +457,9 @@ h1, h2 {
     margin: 56px auto;
     font-size: $fontSizeBase + 34px;
     color: $colorBase;
+}
+.section-hire-me__submit--btm {
+    margin: 0;
 }
 
 .section__enable {
