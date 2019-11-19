@@ -314,32 +314,46 @@ h1, h2 {
 }
 .exoert{
     background-color: $colorExoert; 
-
     &__title{
-        padding: 100px 0 110px 0;
+        font: 300 50px $fontBase;
+        color: $colorTitle;
         text-align: center;
-    } 
-
+        padding: 100px 0 110px 0;
+    }
     &__title-link{
         font: 300 50px $fontBase;
         color: $colorTitle;
-       
+        text-align: center;
+        padding: 100px 0 110px 0;
     }
-
     &__filling{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
-
     &__cells{
         max-width: 345px;
         margin: 0 45px 100px 0;
         text-align: center;
+
+        &__img{
+        border: 2px solid #bac3cc;
+        width: 142px;
+        height: 142px;
+        border-radius: 50%;
+        text-align: center;
+        }
+        
+            &____title{
+                margin: 60px 0 33px 0;
+                font: 700 24px $fontBase;
+                color: $colorTitle;
+            }
+    
     }
 
 }
 .cells__img{
-    
     border: 2px solid #bac3cc;
     width: 142px;
     height: 142px;
@@ -347,6 +361,11 @@ h1, h2 {
     text-align: center;
     margin: 0 auto;
 }
+
+.cell-icon {
+    padding-top: 35px;
+}
+
 .cells__title{
     margin: 60px 0 33px 0;
     font: 700 24px $fontBase;
@@ -354,34 +373,44 @@ h1, h2 {
 }
 .cells__text{
     font: 400 16px $fontBase;
-    line-height: 35px;
 }
+
 .section__works {
-    padding: 92px 0 192px 0;   
+    padding: 92px 0 92px 0;   
 }
+
 .works__title {
-    padding-bottom: 105px;
-    text-align: center;
-}
-.works__title-link{
-    font-size: $fontSizeBase + 34;
+    font-size: $fontSizeBase + 34px;
     font-weight: 300;
     color: $colorTitle;
+    text-align: center;
+    padding-bottom: 105px;
 }
+
+.works__title-link {
+    font-size: $fontSizeBase + 34px;
+    font-weight: 300;
+    color: $colorTitle;
+    text-align: center;
+    padding-bottom: 105px;
+}
+
 .wrapper-works {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
+
 .cell {
-    width: 30%;
-    padding-bottom: 30px;
+    max-width: 361px;
+    margin-bottom: 30px;
     transition-duration: 0.3s;
+    
 }
+
 .works__img {
-    padding: 0 15px 0 0;
+    width: 361px;
+    height: 271px;
+    padding: 0;
 } 
-.works__img:hover {
-    box-shadow: 0px 0px 12px 0px #c0c0c0;
-}
