@@ -3,17 +3,19 @@
     top: 18%;
     left: 12%;
     background-color: $colorLite;
-    border-radius: 4px;
-    padding: 0 50px;
+    border-radius: 10px;
+    padding: 0 20px;
     display: none;
     // margin: 0 0 0 100px;
     width: 70%;
+    min-width: 650px;
 }
 
 .symu__logo {
     background-color: #ffffff;
     position: absolute;
     left: 40%;
+    // margin-left: culc(50% - 97);
     top: -20%;
     padding: 20px 38px;
     width: 118px;
@@ -39,14 +41,14 @@
     font-size: $fontSizeBase + 32;
     color: #dc2e44;
     text-align: center;
-    margin: 170px 0 50px 0;
+    margin: 100px 0 40px 0;
     font-family: $fontSecondary;
 }
 
 .symu__dec {
     color: #b9bcd1;
     text-align: center;
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
     font-family: $fontSecondary;
 }
 
@@ -62,7 +64,7 @@
     border: none;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     cursor: pointer;
     &:hover {
         background-color: hsla(351, 72%, 42%, 0.411);
