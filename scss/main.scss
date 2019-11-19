@@ -111,6 +111,7 @@ h1, h2 {
     color:$colorBase;
     margin-bottom: 150px;
 } 
+
 .menu {
     position: relative; 
 
@@ -298,6 +299,18 @@ h1, h2 {
     top: 660px;
     right: 20px;
     cursor: pointer;
+}
+.arrow{
+    padding-bottom: 20px;
+    
+    &__link{
+        font-size: 25px;
+        color: #8cc0ff;
+
+        &:hover{
+            color: $colorLite;
+        }
+    }    
 }
 .exoert{
     background-color: $colorExoert; 
