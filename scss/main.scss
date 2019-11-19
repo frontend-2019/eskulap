@@ -484,6 +484,11 @@ button__block:active {
     font-size: $fontSizeBase + 34px;
     color: $colorBase;
 }
+.section-hire-me__submit--btm {
+    margin: 0;
+    background-color: white;
+    color: $colorBase;
+}
 
 .section__enable {
     display: block;

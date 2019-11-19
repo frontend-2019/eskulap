@@ -17,3 +17,5 @@ $(function () {
         $('.section-hire-me').toggleClass('section__enable');
     });
 });
+
+
