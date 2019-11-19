@@ -1,0 +1,74 @@
+.symu {
+    position: fixed;
+    top: 18%;
+    left: 12%;
+    background-color: $colorLite;
+    border-radius: 4px;
+    padding: 0 50px;
+    display: none;
+    // margin: 0 0 0 100px;
+    width: 70%;
+}
+
+.symu__logo {
+    background-color: #ffffff;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+    padding: 20px 38px;
+    width: 118px;
+    height: 135px;
+    // border: 1px solid red;
+    border-radius: 50%;
+    box-shadow: 3px 3px 13px rgba(0,0,0,0.5);
+}
+
+.symu__icon {
+    background-image: url('../img/symu-icon.png');
+    background-size: cover;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    // width: 237px;
+    // height: 270px;
+}
+
+.symu__title {
+    font-size: $fontSizeBase + 32;
+    color: #dc2e44;
+    text-align: center;
+    margin: 170px 0 50px 0;
+    font-family: $fontSecondary;
+}
+
+.symu__dec {
+    color: #b9bcd1;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-family: $fontSecondary;
+}
+
+.symu__btn {
+    font-family: $fontSecondary;
+    outline: none;
+    padding: 20px 35px;
+    font-size: $fontSizeBase + 8;
+    color: $colorLite;
+    display: block;
+    margin: 0 auto;
+    background-color: #eb304d;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    cursor: pointer;
+    &:hover {
+        background-color: hsla(351, 72%, 42%, 0.411);
+    }
+    // &:focus .symu {
+    //     // display: none;
+    //     // background-color: red;
+    // }
+}
