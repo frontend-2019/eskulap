@@ -324,6 +324,40 @@ h2 {
         }
     }
 
+    .letter-form__icon {
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+
+    .letter-form__icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #000;
+        transform: rotate(45deg);
+        opacity: 0.8;
+
+        &::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: rotate(-90deg);
+        }
+    }
+
     &__submit {
         text-transform: uppercase;
         font-size: $fontSizeBase;
