@@ -1,32 +1,27 @@
 @import 'variables.scss';
 .footer {
-    background-color: #469dff;
-    padding: 100px 0;
+    background-image: url(../img/bg-footer.png);
+    padding: 80px 0 100px 0;
 }
-
 .footer__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .footer__title {
     font-weight: 300;
-    font-size: $fontSizeBase + 16;
-    color: #fff;
+    font-size:
+    $fontSizeBase + 16;
+    color: $colorLite;
 }
-
 .footer__link {
     font-family: $fontBase;
     text-decoration: none;
     font-weight: 700;
     font-size: $fontSizeBase + 16;
-    color: #fff;
+    color: $colorLite;
 
 }
-
 .btn--footer {
     margin: 0 0 0 50px;
-
-    
 }
