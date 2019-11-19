@@ -11,3 +11,9 @@ $(function () {
         $('.js-form').toggleClass('form--open');
     });
 });
+
+$(function () {
+    $('.js-hide').on('click', function () {
+        $('.cookies').toggleClass('cookies--hide');
+    });
+});

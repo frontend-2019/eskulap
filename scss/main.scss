@@ -267,14 +267,24 @@ h2 {
     &--header {
         margin-bottom: 80px;
     }
+
+    &--cookies {
+        display: inline-block;
+        margin-left: 50px;
+        color: #194277;
+        text-transform: none;
+        font-size: 12px;
+        font-weight: 900;
+        width: 112px;
+        height: 30px;
+        line-height: 30px;
+    }
 }
 
 .button:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
-    -webkit-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    transform: scale(0.98);
+    opacity: 0.8;
     -webkit-box-shadow: inset 0px 0px 17px -4px rgba(222, 222, 222, 0.7);
     box-shadow: inset 0px 0px 17px -4px rgba(222, 222, 222, 0.7);
 }
@@ -558,4 +568,21 @@ h2 {
     font-weight: 300;
     padding: 18px 0 70px;
     color: $fontColorTittle;
+}
+
+.cookies {
+    background-color: #194277;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    padding: 22px 0 20px;
+    z-index: 20;
+
+    &--hide {
+        display: none;
+    }
 }
