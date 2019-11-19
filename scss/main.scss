@@ -7,7 +7,7 @@ $fontSecond: 'Montserrat', sans-serif;
 $colorBase: #3677fd;
 $colorSecond: #5a5a5a;
 
-
+ 
 body {
     background: #ffffff;
     text-decoration: none;
@@ -200,28 +200,6 @@ h1, h2 {
     border-radius: 26px;
     
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .section-header {
     width: 100%;
@@ -280,8 +258,11 @@ h1, h2 {
     &__menu .block__toggler {
         display: flex;
         justify-content: flex-end;
-        color: white;
-        font-size: 24px;
+        .toggler-button {
+            color: white;
+            font-size: 26px;
+            cursor: pointer;
+        }
     }
     &__menu:hover {
         color: black;
