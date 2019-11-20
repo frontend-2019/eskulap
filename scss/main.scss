@@ -383,13 +383,22 @@ h1, h2 {
     font-size: 40px;
     color: rgba(255, 255, 255, 0.664);
 }
-
+.pop-up-relativ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.514);
+    z-index: 2;
+    display: none;
+}
 .section-pop-up {
     position: absolute;
-    top: 80px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1170px;
+    width: 80%;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -422,46 +431,59 @@ h1, h2 {
 }
 
 
-
+.hire-me-relativ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.514);
+    z-index: 2;
+    display: none;
+}
 .section-hire-me {
-    position: absolute;
-    top: 167px;
+    margin: 0 auto;
+    position: fixed;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    width: 814px;
     text-align: center;
     display: none;
+    z-index: 100;
+    width: 60%;
+    
 
     &__form {
         display: flex;
         flex-direction: column;
-        text-align: center;  
+        text-align: center; 
+        margin: 0 146px; 
     }
 
     &__text {
-        width: 520px;
+        width: 100%;
         height: 46px;
         border-radius: 15px;
         border: 1px solid #b7c0c9;
         margin: 0 auto 14px auto;
-        padding: 20px;
+        padding: 0 20px;
     }
 
     &__email {
-        width: 520px;
+        width: 100%;
         height: 46px;
         border-radius: 15px;
         border: 1px solid #b7c0c9;
         margin: 0 auto 14px auto;
-        padding: 20px;
+        padding: 0 20px;
     }
 
     &__textarea {
-        max-width: 520px;
+        width: 100%;
         height: 180px;
         border-radius: 15px;
         border: 1px solid #b7c0c9;
