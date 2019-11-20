@@ -285,7 +285,9 @@ h1, h2 {
         cursor: pointer;
     }
 }
-
+.cookies-disabled {
+    display: none;
+}
 
 
 
@@ -295,6 +297,7 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-sizing: border-box;
     margin: 78px 0 0 0;
 
     &__menu .block__toggler {
@@ -334,7 +337,7 @@ h1, h2 {
     }
     
 }
-.block__caption {
+.info__caption {
     max-width: 720px;
     color: white;
     font-size: $fontSizeBase + 34px;
@@ -344,13 +347,13 @@ h1, h2 {
     margin: 0 auto 28px auto;
 }
 
-.block__text {
-    max-width: 772px;
+.info__text {
+    width: 60%;
     color: #dde3eb;
-    margin: 0 auto 76px auto;
     font-size: $fontSizeBase;
     font-family: $fontBase;
     line-height: 34px;
+    margin: 0 auto 76px auto;
 }
 
 .section-block__submit {
@@ -395,7 +398,7 @@ h1, h2 {
 }
 .section-pop-up {
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -687,6 +690,8 @@ h1, h2 {
     }
 }
 
+
+
 @media (max-width: 991px) {
     .section-expert__wrap {
         flex-direction: column;
@@ -708,6 +713,24 @@ h1, h2 {
         margin-left: 70px;
         margin-top: 35px;
         
+    }
+
+
+
+    .section-block {
+       
+    }
+    .section-hire-me {
+        display: flex;
+        flex-wrap: wrap;
+        &__form {
+            margin: 0 30px;
+        }
+        &__submit {
+            width: 50%;
+        }
+    
+
     }
     
     

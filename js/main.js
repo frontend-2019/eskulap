@@ -1,11 +1,10 @@
 console.log('funnny bunnny')
 
-// $(function () {
-//     $('.section-close').on('click', function () {
-//         $('.section-pop-up').toggleClass('section__disabled');
-//     });
-// });
-
+$(function () {
+    $('.cookies__submit').on('click', function () {
+        $('.cookies').toggleClass('cookies-disabled');
+    });
+});
 
 $(function () {
     $('.toggler-button, .section-close').on('click', function () {
