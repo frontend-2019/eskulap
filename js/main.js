@@ -23,10 +23,10 @@ function acceptCookie() {
 })(jQuery);
 
 $(document).ready(function () {
-  $('.btn--title').click(function () {
-    $('.section__form').addClass('active');
-    $('.menu__icon').addClass('form-hover');
-  });
+  // $('.btn--title').click(function () {
+  //   $('.section__form').addClass('active');
+  //   $('.menu__icon').addClass('form-hover');
+  // });
 
   $('.btn--footer').click(function () {
     $('.section__form').addClass('active-footer');
