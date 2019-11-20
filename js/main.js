@@ -50,13 +50,5 @@ function hideSymu() {
 
 }
 
-(function ($) {
-  $(function () {
-    $('.nav__item').on('click', function () {
-      $(this).closest('.menu')
-        .toggleClass('menu_state_open');
 
-    });
-  });
-})(jQuery);
 

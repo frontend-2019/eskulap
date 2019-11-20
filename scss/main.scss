@@ -142,6 +142,7 @@ h1, h2 {
         position: absolute;
         top: 24px;
         right: 0px;
+
         &.form-hover{
             pointer-events: none;
             opacity: 0.3;
@@ -154,24 +155,25 @@ h1, h2 {
         background-color: $colorLite;
         position: relative;
         display: block;
+
+        &:before,
+        &:after{
+            content: '';
+            width: 100%;
+            position: absolute;
+            height: 2px;
+            background-color: $colorLite;
+            right: 0px;
+            top: 12px;  
+            opacity: 1;  
+        }
+
+        &:after{
+            top: auto;
+            bottom: -6px;
+        }
     }
 
-    &__icon-line:before,
-    &__icon-line:after{
-        content: '';
-        width: 100%;
-        position: absolute;
-        height: 2px;
-        background-color: $colorLite;
-        right: 0px;
-        top: 12px;  
-        opacity: 1;  
-    }
-
-    &__icon-line:after{
-        top: auto;
-        bottom: -6px;
-    }
 }
 .cookie{
     background-color: $colorCookie;
@@ -228,12 +230,11 @@ h1, h2 {
         cursor: pointer;
         display: block;
         height: 100%;
+
+        &:hover{
+            color: $colorBase;
+        } 
     }
-
-    &__link:hover{
-        color: $colorBase;
-    } 
-
     &__item{
         height: 100px;
         margin: 0;
@@ -278,7 +279,8 @@ h1, h2 {
     -moz-box-shadow: 10px 10px 0px 5000px rgba(0,0,0,0.6);
     box-shadow: 10px 10px 0px 5000px rgba(0,0,0,0.6);
 }
-.menu_state_open .menu__icon-line,.menu_state_open .menu__icon-line::after{
+.menu_state_open .menu__icon-line,
+.menu_state_open .menu__icon-line::after{
     background-color: $colorBase;
 }
 .menu_state_open .menu__icon-line{
@@ -521,12 +523,6 @@ textarea{
     color: $colorTitle;
     text-align: center;
     padding-bottom: 105px;
-}
-
-.btn--title{
-    color:$colorBase;
-    // padding:  20px 0;
-    margin-bottom: 150px;
 }
 
 .works__title-link {
