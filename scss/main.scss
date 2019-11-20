@@ -83,7 +83,12 @@ h1, h2 {
         text-align: center;
         padding-bottom: 45px;
     }
- 
+
+    &__logo-svg{
+        border-radius: $borderRadius + 78;
+        background-color: #4794fe;
+    }
+    
     &__name{
         max-width: 810px;
         margin: 0 auto;
