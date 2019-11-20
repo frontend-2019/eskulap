@@ -1,9 +1,6 @@
 $fontSizeBase: 16px;
-$fontBase: 'Lato',
-sans-serif;
-$fontSecondary: 'Montserrat',
-sans-serif;
-;
+$fontBase: 'Lato',sans-serif;
+$fontSecondary: 'Montserrat',sans-serif;
 $bgcolor: #f1f8ff;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
@@ -199,7 +196,7 @@ h2 {
     height: 150px;
     background-color: #fff;
     border-radius: 50%;
-    margin: 0 auto 50px;
+    margin: 0 auto 70px;
     position: relative;
 }
 
@@ -230,15 +227,16 @@ h2 {
     color: #fff;
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .text {
     color: #5a5a5a;
     margin: 0 0 75px 0;
+    line-height: 36px;
 }
 
 .text--header {
-
     font-family: $fontBase;
     color: #fff;
     font-weight: 300;
@@ -246,11 +244,15 @@ h2 {
     opacity: 0.8;
 }
 
+.hide {
+    display: none;
+}
+
 .button {
     display: block;
     width: 205px;
-    height: 40px;
-    line-height: 40px;
+    height: 55px;
+    line-height: 55px;
     background-color: #fff;
     color: #3695ff;
     font-size: $fontBase;
@@ -262,17 +264,135 @@ h2 {
     transition: all .3s;
     margin: 0 auto;
     border-radius: 24px;
+
+    &--header {
+        margin-bottom: 80px;
+    }
+
+    &--cookies {
+        display: inline-block;
+        margin-left: 50px;
+        color: #194277;
+        text-transform: none;
+        font-size: 12px;
+        font-weight: 900;
+        width: 112px;
+        height: 30px;
+        line-height: 30px;
+    }
 }
 
 .button:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
-    -webkit-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    transform: scale(0.98);
+    opacity: 0.8;
     -webkit-box-shadow: inset 0px 0px 17px -4px rgba(222, 222, 222, 0.7);
     box-shadow: inset 0px 0px 17px -4px rgba(222, 222, 222, 0.7);
 }
+
+.form {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+
+    &--open {
+        display: flex;
+    }
+
+    &--close {
+        display: none;
+    }
+}
+
+.letter-form {
+    width: 815px;
+    background-color: #ffffff;
+    padding: 65px 145px 65px 140px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: -720px;
+
+
+    &__tittle {
+        font-family: $fontSecondary;
+        color: $fontColorTittle;
+        font-size: $fontSizeBase + 34;
+        font-weight: normal;
+        margin-bottom: 60px;
+    }
+
+    &__row {
+        flex-grow: 1;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 18px 0 18px 20px;
+        margin-bottom: 14px;
+        resize: none;
+
+        &--message {
+            height: 170px;
+        }
+    }
+
+    &__submit {
+        text-transform: uppercase;
+        font-size: $fontSizeBase;
+        color: #fff;
+        font-weight: bold;
+        background-color: #3680fe;
+        border: none;
+        max-width: 204px;
+        margin: 0 auto;
+        padding: 20px 40px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: #1555c4;
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.close-form {
+    width: 25px;
+    height: 25px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: $fontColorTittle;
+        transform: rotate(-45deg) translate(-16px);
+    }
+
+    &:before {
+        transform: rotate(45deg) translateY(16px)
+    }
+
+    &--open {
+        display: block;
+    }
+}
+
 
 .scroll {
     position: fixed;
@@ -285,8 +405,8 @@ h2 {
     width: 25px;
     display: block;
     position: absolute;
-    top: 10px;
-    right: 40px;
+    top: 8px;
+    right: 15px;
     z-index: 5;
 
     &__icon {
@@ -311,6 +431,7 @@ h2 {
             background-color: $fontColorTittle;
         }
     }
+
 
     &__line {
         width: 25px;
@@ -360,14 +481,13 @@ h2 {
         margin: 0 auto;
         list-style-type: none;
         display: flex;
-        padding: 0;
+        padding: 0 0 75px 0;
         border: none;
         max-width: 420px;
     }
 
     &__item {
         padding: 0;
-
     }
 
     &__link {
@@ -375,10 +495,11 @@ h2 {
         text-align: center;
         border: none;
         text-decoration: none;
-        padding: 9px 0;
+        padding: 0;
         font-weight: 300;
         color: #d2d2d2;
         font-size: $fontSizeBase + 34;
+        line-height: 90px;
 
         &:hover {
             border: none;
@@ -389,7 +510,58 @@ h2 {
     &--open {
         display: block;
         position: absolute;
+    }
 
+    &__line {
+        max-width: 396px;
+
+    }
+}
+
+.social {
+
+    &__list {
+        list-style: none;
+        margin: 0 auto;
+        padding: 60px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 420px;
+    }
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        background-color: #e1e1e1;
+        border-radius: 50%;
+        color: white;
+        font-size: 38px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        line-height: 50px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #367ffe;
+        }
+    }
+
+}
+
+.lang {
+    position: absolute;
+    bottom: 19px;
+    right: 25px;
+    display: flex;
+
+
+    &__eng {
+        padding: 0 15px 0 0;
+        color: #d2d2d2;
+        font-weight: normal;
+        align-content: center;
     }
 }
 
@@ -446,8 +618,24 @@ h2 {
     padding: 0 0 0 10px;
 }
 .foo__button {
-    margin: -2px 50px;
+    margin: -10px 50px;
     padding: 0;
     outline: none;
     font-size: $fontSizeBase;
+}
+.cookies {
+    background-color: #194277;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    padding: 22px 0 20px;
+    z-index: 20;
+
+    &--hide {
+        display: none;
+    }
 }

@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/4a76c04616.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -19,39 +20,60 @@
 <body>
     <section class="section section--header">
         <div class="mainer">
+            <div class="cookies js-hide">This site uses cookies, so that my service can work better. <a
+                    class="button button--cookies" href="#">Accept</a></div>
             <div class="nav js-nav">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="#about">About Me</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Services</a>
+                        <a class="nav__link" href="#services">Services</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">My Works</a>
+                        <a class="nav__link" href="#works">My Works</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#blog">Clients</a>
+                        <a class="nav__link" href="#clients">Clients</a>
                     </li>
                 </ul>
+                <hr class="nav__line">
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__icon facebook"><i class="fab fa-facebook-f"></i></li>
+                        <li class="social__icon twitter"><i class="fab fa-twitter"></i></li>
+                        <li class="social__icon dribbble"><i class="fas fa-basketball-ball"></i></li>
+                        <li class="social__icon behance"><i class="fab fa-behance"></i></li>
+                    </ul>
+                    <div class="lang"><span class="lang__eng">ENG</span><img src="img/gb-flag.jpg"
+                            alt="great-britan flag" class="flag"></div>
+                </div>
+
             </div>
             <div class="circle"></div>
             <h1 class="title">free portfolio PSD template<br>
                 FOR GRAPHIC designerS
             </h1>
-            <p class="text text--header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-                qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                dolore magnam aliquam quaerat voluptatem.</p>
-            <a href="#" class="button button--center">hire me</a>
+            <p class="text text--header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor<br>
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+            <a href="#" class="button button--header js-form-toggle">hire me</a>
+
+            <div class="form js-form">
+                <form class="letter-form" method="GET" action="#">
+                    <h2 class="letter-form__tittle">Hire Me</h2>
+                    <div class="letter-form__input">
+                        <input class="letter-form__row" type="text" name="name" placeholder="Your Name">
+                        <input class="letter-form__row" type="email" name="email" placeholder="Your E-Mail">
+                        <textarea class="letter-form__row letter-form__row--message" name="details"
+                            placeholder=" Your Message"></textarea>
+                        <input class="letter-form__submit js-form-toggle" type="submit" value="SEND MESSAGE">
+                    </div>
+                    <div class="close-form js-form-toggle"></div>
+                </form>
+
+            </div>
+
             <div class="scroll">
                 <img src="img/scroll.png" alt="scroll" class="scroll__img">
             </div>
@@ -65,7 +87,7 @@
         </div>
     </section>
 
-    <section class="section section--about-me">
+    <section id="about" class="section section--about-me">
         <div class="mainer">
             <h2 class="subtitle">About Me</h2>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -76,7 +98,7 @@
         </div>
     </section>
 
-    <section class="section section--expert">
+    <section id="services" class="section section--expert">
         <div class="mainer">
 
             <div class="block-skills-title">
@@ -160,7 +182,7 @@
         </div>
     </section>
 
-    <section class="section section--body">
+    <section id="works" class="section section--body">
         <div class="mainer">
             <div class="head">Latest Works</div>
             <div class="base-date">
