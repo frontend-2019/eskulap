@@ -122,14 +122,25 @@ h1, h2 {
     &:hover {
         background-color: #ffffffa1;
     }
-}
-.btn--title{
-    color:$colorBase;
-    margin-bottom: 150px;
-    &:focus .symu {
-        display: block;
+
+    &--cookie{
+        font-size: $fontSizeBase - 4;
+        font-weight: bold;
+        color: $colorCookie;
+        text-transform: none;
+        width: 110px;
+        padding: 10px 0;
     }
-} 
+
+    &--title{
+        color:$colorBase;
+        margin-bottom: 150px;
+
+        &:focus .symu {
+            display: block;
+        }
+    } 
+}
 
 .menu {
     position: relative; 
@@ -192,14 +203,7 @@ h1, h2 {
     }
     
 }
-.btn--cookie{
-    font-size: $fontSizeBase - 4;
-    font-weight: bold;
-    color: $colorCookie;
-    text-transform: none;
-    width: 110px;
-    padding: 10px 0;
-}
+
 
 .nav{
     display: flex;
