@@ -1,3 +1,5 @@
+console.log('funnny bunnny')
+
 // $(function () {
 //     $('.section-close').on('click', function () {
 //         $('.section-pop-up').toggleClass('section__disabled');
