@@ -182,14 +182,6 @@ h1, h2 {
     color: white;
     margin-right: 60px;;
 }
-.button__block {
-    background: white;
-    text-align: center;
-    height: 55px;
-    width: 200px;
-    border-radius: 26px;
-    
-}
 
 .section-6__button {
     font-size: 16px;
@@ -219,6 +211,26 @@ h1, h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section-header {
     width: 100%;
     box-sizing: border-box;
@@ -227,6 +239,12 @@ h1, h2 {
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
+
 .cookies {
     position: absolute;
     top: 0;
@@ -241,7 +259,7 @@ h1, h2 {
 
 
     &__text {
-        color: #ffffff;
+    color: #ffffff;
     margin: 0 33px 0 0;
     }
     &__button {
@@ -266,6 +284,11 @@ h1, h2 {
         cursor: pointer;
     }
 }
+
+
+
+
+
 
 .section-block {
     display: flex;
@@ -302,6 +325,7 @@ h1, h2 {
 
     &__info {
        text-align: center;
+       margin: 0 auto;
     }
 
     &__button {
@@ -364,8 +388,7 @@ h1, h2 {
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1170px;
-    height: 712px;
+    max-width: 1170px;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -437,7 +460,7 @@ h1, h2 {
     }
 
     &__textarea {
-        width: 520px;
+        max-width: 520px;
         height: 180px;
         border-radius: 15px;
         border: 1px solid #b7c0c9;
@@ -591,6 +614,8 @@ h1, h2 {
 
 
 
+
+
 .title {
     text-align: center;
     color: $colorBase;
@@ -648,5 +673,3 @@ h1, h2 {
         width: 100%;
     }
 }
-
-
