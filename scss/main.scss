@@ -182,14 +182,6 @@ h1, h2 {
     color: white;
     margin-right: 60px;;
 }
-.button__block {
-    background: white;
-    text-align: center;
-    height: 55px;
-    width: 200px;
-    border-radius: 26px;
-    
-}
 
 .section-6__button {
     font-size: 16px;
@@ -199,24 +191,6 @@ h1, h2 {
     line-height: 55px;
     text-decoration: none;
 }
-
-.section-6__butto:hover,
-.button__block:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    transition-duration: 0.3s;
-}
-
-.section-6__button:active,
-button__block:active {
-    background-color: black;
-    color: rgba(255, 0, 0, 0.822);
-    cursor: pointer;
-    transform: scale(1.2);
-    transition-duration: 0.3s;
-}
-
 
 
 .section-header {
@@ -250,7 +224,7 @@ button__block:active {
     &__submit {
         width: 114px;
         height: 31px;
-        border: none;  
+        border: none;
         border-radius: 15px;
     }
     &__submit:hover {
@@ -648,5 +622,3 @@ button__block:active {
         width: 100%;
     }
 }
-
-
