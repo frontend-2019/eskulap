@@ -193,6 +193,44 @@ h1, h2 {
     text-decoration: none;
 }
 
+.section-6__butto:hover,
+.button__block:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.section-6__button:active,
+.button__block:active {
+    background-color: black;
+    color: rgba(255, 0, 0, 0.822);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-header {
     width: 100%;
@@ -202,6 +240,12 @@ h1, h2 {
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
+
 .cookies {
     position: absolute;
     top: 0;
@@ -216,7 +260,7 @@ h1, h2 {
 
 
     &__text {
-        color: #ffffff;
+    color: #ffffff;
     margin: 0 33px 0 0;
     }
     &__button {
@@ -241,6 +285,11 @@ h1, h2 {
         cursor: pointer;
     }
 }
+
+
+
+
+
 
 .section-block {
     display: flex;
@@ -277,6 +326,7 @@ h1, h2 {
 
     &__info {
        text-align: center;
+       margin: 0 auto;
     }
 
     &__button {
@@ -285,7 +335,7 @@ h1, h2 {
     
 }
 .block__caption {
-    width: 720px;
+    max-width: 720px;
     color: white;
     font-size: $fontSizeBase + 34px;
     font-family: $fontBase;
@@ -295,7 +345,7 @@ h1, h2 {
 }
 
 .block__text {
-    width: 772px;
+    max-width: 772px;
     color: #dde3eb;
     margin: 0 auto 76px auto;
     font-size: $fontSizeBase;
@@ -339,8 +389,7 @@ h1, h2 {
     top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1170px;
-    height: 712px;
+    max-width: 1170px;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -412,7 +461,7 @@ h1, h2 {
     }
 
     &__textarea {
-        width: 520px;
+        max-width: 520px;
         height: 180px;
         border-radius: 15px;
         border: 1px solid #b7c0c9;
@@ -540,6 +589,8 @@ h1, h2 {
 .menu__social--active {
     background-color: $colorBase;
 }
+
+
 
 
 
