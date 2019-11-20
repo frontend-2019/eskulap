@@ -209,7 +209,7 @@ h1, h2 {
 }
 
 .section-6__button:active,
-button__block:active {
+.button__block:active {
     background-color: black;
     color: rgba(255, 0, 0, 0.822);
     cursor: pointer;
@@ -310,7 +310,7 @@ button__block:active {
     
 }
 .block__caption {
-    width: 720px;
+    max-width: 720px;
     color: white;
     font-size: $fontSizeBase + 34px;
     font-family: $fontBase;
@@ -320,7 +320,7 @@ button__block:active {
 }
 
 .block__text {
-    width: 772px;
+    max-width: 772px;
     color: #dde3eb;
     margin: 0 auto 76px auto;
     font-size: $fontSizeBase;
