@@ -7,6 +7,7 @@ $bgcolor: #f1f8ff;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
 $fontBgBox: #f4f4f4;
+$fontFoo: #f1f8ff;
 
 body {
     background: #ffffff;
@@ -572,6 +573,58 @@ h2 {
     color: $fontColorTittle;
 }
 
+.head--footer {
+    margin: 0;
+    padding: 70px 0;
+}
+.soc-box {
+    margin: 0;
+    padding: 0;
+}
+.section--social-net {
+    background-color: $fontFoo;
+    margin: 0;
+    padding: 0;
+}
+.wrapper--social-net {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block--social-net {
+    margin: 0 30px;
+}
+.social-net__img {
+    margin: 20px 0;
+}
+.foo {
+    background-color: $fontCol;
+}
+.foo__text {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.foo__text-light {
+    font-size: $fontSizeBase + 10;
+    color: $fontBgBox;
+    opacity: 0.7;
+}
+.foo__text-bold {
+    font-size: $fontSizeBase + 10;
+    color: $fontBgBox;
+    font-family: $fontBase;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+}
+.foo__button {
+    margin: -10px 50px;
+    padding: 0;
+    outline: none;
+    font-size: $fontSizeBase;
+}
 .cookies {
     background-color: #194277;
     position: fixed;
