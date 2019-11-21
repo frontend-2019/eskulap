@@ -384,25 +384,15 @@ h1, h2 {
         transform: rotate(-45deg);
     }
 
-}
-
+}  
 
 .section__form{
     display: none;
-    position: absolute;
-    &.active{
-        display: block;
-        width: 100%;
-        top: 12%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 815px;
-        box-shadow: 10px 10px 0px 5000px rgba(0, 0, 0, 0.6);
-    }
+    position: fixed;
     &.active-footer{
         display: block;
         width: 100%;
-        top: 90%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 815px;
@@ -418,7 +408,7 @@ h1, h2 {
     &__title{
         font: 400 50px $fontSecondary;
         color: $colorTitle;
-        padding: 65px 0 60px 0;
+        padding: 25px 0 20px 0;
     }
     &__wrapper{
         width: 100%;
@@ -443,7 +433,7 @@ h1, h2 {
         text-transform: uppercase;
         color: $colorLite;
         padding: 20px 40px;
-        margin: 0 0 60px 0;
+        margin: 0 0 30px 0;
         background: #3695ff; 
         background: -moz-linear-gradient(left,  #3695ff 0%, #3670fd 100%);
         background: -webkit-linear-gradient(left,  #3695ff 0%,#3670fd 100%); 

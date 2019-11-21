@@ -36,6 +36,7 @@ $(document).ready(function () {
     $('.section__form').removeClass('active-footer');
     $('.section__form').removeClass('active');
     $('.menu__icon').removeClass('form-hover');
+
   })
 });
 
