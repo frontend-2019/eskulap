@@ -95,13 +95,12 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
 
-.grid-wrapper__сell {
-    max-width: 360px;
-    margin-bottom: 90px;
+    &__сell {
+        max-width: 360px;
+        margin-bottom: 90px;
+    }
 }
-
 
 .block-skills {
     text-align: center;
