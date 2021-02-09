@@ -1,8 +1,6 @@
 $fontSizeBase: 16px;
-$fontBase: 'Lato',
-sans-serif;
-$fontSecondary: 'Montserrat',
-sans-serif;
+$fontBase: 'Lato',sans-serif;
+$fontSecondary: 'Montserrat',sans-serif;
 $bgcolor: #f1f8ff;
 $fontColorTittle: #3677fd;
 $fontCol: #469dff;
@@ -97,13 +95,12 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
 
-.grid-wrapper__sell {
-    max-width: 360px;
-    margin-bottom: 90px;
+    &__сell {
+        max-width: 360px;
+        margin-bottom: 90px;
+    }
 }
-
 
 .block-skills {
     text-align: center;
@@ -335,6 +332,7 @@ h2 {
         padding: 18px 0 18px 20px;
         margin-bottom: 14px;
         resize: none;
+        border: 1px solid grey;
 
         &--message {
             height: 170px;
